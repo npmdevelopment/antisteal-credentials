@@ -1,0 +1,20 @@
+{
+  "name": "antisteal-credentials",
+  "version": "1.0.0",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"This Package is used to Protect the Credentials with Secure LocalStorage.\" && exit 1"
+  },
+  "keywords": [
+    "security",
+    "credentials",
+    "localstorage",
+    "encryption"
+  ],
+  "author": "Leonel Joel Flores Gauna",
+  "description": "A package to securely store and manage credentials in local storage using encryption.",
+  "dependencies": {
+    "secure-ls": "^2.0.0"
+  }
+}
