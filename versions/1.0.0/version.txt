@@ -1,0 +1,37 @@
+Version: 1.0.0
+Package: Anti-Steal Credentials
+
+How to Use:
+
+1. Installation:
+   You can install the Anti-Steal Credentials package via npm. Run the following command in your terminal:
+   npm install antisteal-credentials
+
+2. Importing the Package:
+   You can import the package in your JavaScript files. Make sure to use the correct import syntax:
+   import { SecurityCredentials } from "./main.js"; // Ensure the path is correct
+
+3. Using the SecurityCredentials Class:
+   Once imported, you can create an instance of SecurityCredentials to manage your credentials securely.
+
+   Here’s an example of how to use the class:
+   const credentialsManager = new SecurityCredentials();
+
+   // Save credentials securely
+   credentialsManager.saveCredentials('apiKey', '12345-abcde');
+
+   // Retrieve credentials securely
+   const apiKey = credentialsManager.getCredentials('apiKey');
+   console.log('Retrieved API Key:', apiKey);
+
+   // Clear a specific credential
+   credentialsManager.clearCredentials('apiKey');
+
+   // Clear all stored credentials
+   credentialsManager.clearAllCredentials();
+
+4. Notes:
+   - Ensure you have the secure-ls dependency installed, as it's required for encryption.
+   - Remember to handle any potential errors when using the methods provided by the SecurityCredentials class.
+
+For more details, check the documentation or the source code for further functionalities.
